@@ -1,3 +1,36 @@
-h2{
-    color: red;
+
+/*-----Global Styles-----*/
+body {
+    color:white;
+    background: #010101;
+    margin: 0;
+
+    font-family: 'Roboto Mono', "Courier New", monospace;
 }
+
+/*-----Navbar-----*/
+nav {
+    display: flex; 
+} 
+h1 {
+    display: none;
+}
+nav a {
+    text-decoration: none;
+}
+
+#social-nav li {
+    background: white;
+}
+
+.logo {
+    width: 150px;
+}
+
+/*-----main content-----*/
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*-----uhhh idk yet-----*/
