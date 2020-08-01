@@ -2,17 +2,12 @@
 /*-----Global Styles-----*/
 body {
     color:white;
-<<<<<<< HEAD
     background: #0A0114;
-=======
-    background: #010101;
->>>>>>> parent of c56e0ae... fixed icon size + finished navbar desktop layout css
     margin: 0;
 
     font-family: 'Roboto Mono', "Courier New", monospace;
 }
 
-<<<<<<< HEAD
 /*-------------------------------------------------------Navbar------------------------------------------------------------*/
 header {
     display: flex;
@@ -42,14 +37,6 @@ nav {
 }
 .nav-links li {
     letter-spacing: 1px;
-=======
-/*-----Navbar-----*/
-nav {
-    display: flex; 
-} 
-h1 {
-    display: none;
->>>>>>> parent of c56e0ae... fixed icon size + finished navbar desktop layout css
 }
 nav a {
     text-decoration: none;
@@ -68,7 +55,6 @@ main {
     width: 60%;
     margin: 0 auto;
 }
-<<<<<<< HEAD
  /* landing text */
  .landing-text em {
     font-style: normal;
@@ -131,7 +117,3 @@ main {
         font-size: 40px;
     }
 }
-=======
-
-/*-----uhhh idk yet-----*/
->>>>>>> parent of c56e0ae... fixed icon size + finished navbar desktop layout css
