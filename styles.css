@@ -1,5 +1,5 @@
 
-/*-----Global Styles-----*/
+/*----------------------Global Styles--------------------------*/
 body {
     color:white;
     background: #0A0114;
@@ -7,50 +7,61 @@ body {
 
     font-family: 'Roboto Mono', "Courier New", monospace;
 }
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
 
-/*-------------------------------------------------------Navbar------------------------------------------------------------*/
+/*-------------------------Navbar-------------------------------*/
 header {
     display: flex;
-    justify-content: space-around;
-    margin: 17px 0px;
-    padding: 0;
-} 
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+}
 
-/*logo/homepage*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+}
+
+/*logo in homepage*/
 .logo {
     width: 150px;
-    padding: 15px 0 10px;
 }
 
 /*nav options*/
-nav {
-    display: flex;
-    width: 67%;
-}
 .nav-links {
     display: flex;
-    width: 30%;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 25 auto;
-    padding: 0;
-}
-.nav-links li {
-    letter-spacing: 1px;
-}
-nav a {
-    text-decoration: none;
+    justify-content: space-between;
+    width: 35%;
 }
 
-/*#social-nav li {
-    background: white;
-}*/
-
-.logo {
-    width: 150px;
+/* social media nav links */
+aside {
+    width: 15%;
+}
+.social-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.social-nav img{
+    width: 30px;
 }
 
-/*-----main content-----*/
+/* burgie hehe */
+.burger {
+    display: none;
+}
+
+/*------------------------main content------------------------------*/
 main {
     width: 60%;
     margin: 0 auto;
@@ -60,60 +71,8 @@ main {
     font-style: normal;
 }
 
-/* h2 {
-    font-family: Helvetica, Arial, sans-serif;
-} */
-
-/*------------------------------------------------------------*****Responsive stuff*****-----------------------------------------------------------------*/
-
-@media screen and (min-width: 768px) {
-    /* landing page text */
-    .landing-text {
-        font-size: 70px;
-        font-family: 'Roboto Mono', "Courier New", monospace;
-        margin: 0;
-    }
-    
+.contact-icons {
+    width: 30px;
 }
+/*-----------------------*****Responsive stuff*****---------------------*/
 
-@media screen and (max-width: 1024px){
-    /* nav options */
-    nav {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    /* ----------navbar---------- */
-    /* nav options */
-    
-    .social-nav {
-        position: absolute;
-        right: 0px;
-        height: 50vh;
-        top: 9vh;
-        background-color: green;
-        
-    }
-    /* logo */
-    .logo {
-        position: absolute;
-        align-content: center;
-        width: 125px;
-        
-    }
-    /* -----------main content-------- */
-    /* landing page */
-    .landing-text {
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    header {
-        margin: 10px 0;
-    }
-    .landing-text {
-        font-size: 40px;
-    }
-}
