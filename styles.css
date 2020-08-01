@@ -3,7 +3,7 @@
 body {
     color:white;
     background: #0A0114;
-    margin: 0 auto;
+    margin: 0;
 
     font-family: 'Roboto Mono', "Courier New", monospace;
 }
@@ -13,6 +13,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 17px 0px;
+    padding: 0;
 } 
 
 /*logo/homepage*/
@@ -23,10 +24,12 @@ header {
 
 /*nav options*/
 nav {
-    width: 25%;
+    display: flex;
+    width: 67%;
 }
 .nav-links {
     display: flex;
+    width: 30%;
     justify-content: space-around;
     list-style-type: none;
     margin: 25 auto;
@@ -73,19 +76,65 @@ main {
     max-width: 75%;
     margin: 0 auto;
 }
+ /* landing text */
+ .landing-text em {
+    font-style: normal;
+}
+
 /* h2 {
     font-family: Helvetica, Arial, sans-serif;
 } */
 
 /*------------------------------------------------------------*****Responsive stuff*****-----------------------------------------------------------------*/
 
+@media screen and (min-width: 768px) {
+    /* landing page text */
+    .landing-text {
+        font-size: 70px;
+        font-family: 'Roboto Mono', "Courier New", monospace;
+        margin: 0;
+    }
+    
+}
+
 @media screen and (max-width: 1024px){
     /* nav options */
     nav {
-        width: 35%;
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    /* ----------navbar---------- */
+    /* nav options */
+    
+    .social-nav {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 9vh;
+        background-color: green;
+        
+    }
+    /* logo */
+    .logo {
+        position: absolute;
+        align-content: center;
+        width: 125px;
+        
+    }
+    /* -----------main content-------- */
+    /* landing page */
+    .landing-text {
+        font-size: 40px;
+    }
+}
 
+@media screen and (max-width: 360px) {
+    header {
+        margin: 10px 0;
+    }
+    .landing-text {
+        font-size: 40px;
+    }
 }
