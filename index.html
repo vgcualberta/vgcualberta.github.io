@@ -7,28 +7,45 @@
         <title>VGC @ UAlberta</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            .landing-text {
+                font-size: 70px;
+                font-family: 'Roboto Mono', "Courier New", monospace;
+                margin: 0;
+            }
+            .landing-text em {
+                font-style: normal;
+            }
+        </style>
     </head>
     <body>
         <header>    
-            <h1><a href="index.html" title="Home page">Video Gaming Club</a></h1>
             <a href="index.html" title="Home page"><img class="logo" src="vgc png logo for header.png" alt="vgc logo (joystick beside title)"></a>
             <nav>    
-                <ul>
+                <ul class="nav-links">
                     <li><a href="events.html" title="Events page">Events</a></li>
                     <li><a href="about.html" title="About page">About</a></li>
                     <li><a href="contact.html" title="Contact page">Contact</a></li>
                 </ul>
             </nav>                
-            <aside id="social-nav">
-                <ul>
+            <aside>
+                <ul class="social-nav">
                     <li><a href="https://www.instagram.com/vgcualberta/" title="vgc instagram page"><img src="icons/instagram.svg" alt="instagram icon"></a></li>
                     <li><a href="https://www.facebook.com/vgcualberta/" title="vgc facebook page"><img src="icons/facebook.svg" alt="facebook link"></a></li>
                     <li><a href="https://www.twitch.tv/thevgcofficial" title="vgc twitch page"><img src="icons/twitch.svg" alt="twitch link"></a></li>
                 </ul>
             </aside>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </header>
         <main>
-            <div class="content-wrap"><h2 id="landing-text">Fostering our passion for gaming. <em>We are UAlberta's Video Gaming Club.</em></h2></div>
+            <div class="content-wrap">
+                <h2 class="landing-text">Fostering our passion for gaming.</h2> 
+                <h1 class="landing-text"><em>We are UAlberta's Video Gaming Club.</em></h1>
+            </div>
             <section id="featured-event">
                 <h3>Our Next Event</h3>
                 <p>The club is currently on break for the summer term as we're cooped up at home playing games. Keep your eyes out in Fall 2020 for future events!</p>

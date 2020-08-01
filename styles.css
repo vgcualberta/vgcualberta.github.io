@@ -1,36 +1,91 @@
 
-/*-----Global Styles-----*/
+/*------------------------------------------------------Global Styles------------------------------------------------------*/
 body {
     color:white;
-    background: #010101;
-    margin: 0;
+    background: #0A0114;
+    margin: 0 auto;
 
     font-family: 'Roboto Mono', "Courier New", monospace;
 }
 
-/*-----Navbar-----*/
-nav {
-    display: flex; 
+/*-------------------------------------------------------Navbar------------------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 17px 0px;
 } 
-h1 {
-    display: none;
-}
-nav a {
-    text-decoration: none;
-}
 
-/*#social-nav li {
-    background: white;
-}*/
-
+/*logo/homepage*/
 .logo {
     width: 150px;
+    padding: 15px 0 10px;
 }
 
-/*-----main content-----*/
+/*nav options*/
+nav {
+    width: 25%;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 25 auto;
+    padding: 0;
+}
+.nav-links li {
+    letter-spacing: 1px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/*social media icons*/
+.social-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 25 auto;
+    padding: 0;
+}
+.social-nav li {
+    margin: 0 5px;
+}
+.social-nav img {
+    width: 30px;
+}
+
+/*menu lines (burgie hehe)*/
+ .burger {
+    display: none;
+    padding-top: 15px;
+}
+
+.burger div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 7px;
+}
+
+/* breakpoint @ 1024px max width */
+/*-------------------------------------------------------main content------------------------------------------------------------*/
 main {
-    width: 60%;
+    max-width: 75%;
     margin: 0 auto;
 }
+/* h2 {
+    font-family: Helvetica, Arial, sans-serif;
+} */
 
-/*-----uhhh idk yet-----*/
+/*------------------------------------------------------------*****Responsive stuff*****-----------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px){
+    /* nav options */
+    nav {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
