@@ -1,0 +1,15 @@
+/* ----- CSS for events.html ----- */
+/* calendars */
+.calendar {
+    max-width: 100%;
+}
+.mobile-cal {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .desktop-cal {
+        display: none;
+    }
+    .mobile-cal {
+        display: block;
+    }
