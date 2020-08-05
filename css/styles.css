@@ -10,7 +10,7 @@
 body {
     color:var(--ghost-white);
     background: var(--xiketic);
-    background: linear-gradient(180deg, var(--xiketic) 30%, var(--dark-purple) 70%);
+    background: linear-gradient(180deg, var(--xiketic) 25%, var(--dark-purple) 50%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;

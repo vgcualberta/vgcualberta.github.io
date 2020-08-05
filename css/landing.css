@@ -6,7 +6,7 @@ main { /* so that glitch text doesn't overflow */
 /* BIG TEXT STUFF */
 .landing-text-container {
     width: 100vw;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 120px);
     display: grid;
     place-items: center;
 }
