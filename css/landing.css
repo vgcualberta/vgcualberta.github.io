@@ -1,14 +1,81 @@
 /* ----- CSS for index.html ----- */
- /* landing text */
- .landing-text em {
-    font-style: normal;
+main { /* so that glitch text doesn't overflow */
+    overflow-x: hidden;
 }
-@media screen and (min-width: 768px) {        
-    /* landing page text */
-    .landing-text {
-        font-size: 70px;
+
+/* BIG TEXT STUFF */
+.landing-text-container {
+    width: 100vw;
+    height: calc(100vh - 110px);
+    display: grid;
+    place-items: center;
+}
+.landing-text-container div {
+    width: 80%;
+    margin: 0 auto;
+}
+.landing-text {
+        font-size: 10vh;
         font-family: 'Roboto Mono', "Courier New", monospace;
         margin: 0;
+}
+h1 {
+    position: relative;
+    animation: text-appear 3s linear 1;
+}
+h1 em {
+    font-style: normal;
+}
+@keyframes text-appear {
+    0%{ opacity: 0;}
+    20%{ opacity: 0;}
+    40%{ opacity: 0.3;}
+    60%{ opacity: 0.6;}
+    80%{ opacity: 0.9;}
+    100%{ opacity: 1;}
+}
+/* glitch effect */
+h1::before,h1::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+h1::before{
+    color: #ff00c1;
+    animation: glitch-effect 3s 1s infinite ease;
+}
+h1::after{
+    color: turquoise;
+    animation: glitch-effect 2s 1s infinite ease;
+}
+@keyframes glitch-effect {
+    0%{ left: -4px; }
+    25%{ left: 4px; }
+    50%{ left: -2px; }
+    75%{ left: 2px; }
+    100%{ left: 0px; }
+}
+
+/* RESPONSIVE STUFF HERE */
+@media screen and (max-width: 1024px){
+    .landing-text {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {        
+    /* BIG TEXT STUFF */
+    .landing-text {
+        font-size: 5vh;
     }
     
+}
+@media screen and (max-height: 567px){
+    .landing-text {
+        font-size: 7vw;
+    }
 }

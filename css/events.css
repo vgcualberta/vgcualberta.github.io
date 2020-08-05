@@ -6,6 +6,10 @@
 .mobile-cal {
     display: none;
 }
+main {
+    padding-top: 110px;
+}
+
 @media screen and (max-width: 768px) {
     .desktop-cal {
         display: none;

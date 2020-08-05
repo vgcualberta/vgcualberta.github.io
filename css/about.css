@@ -2,3 +2,6 @@
 .strikethrough {
     text-decoration: line-through;
 }
+main {
+    padding-top: 110px;
+}
