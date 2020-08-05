@@ -114,17 +114,22 @@ main {
         top: 109px;
         margin: 0;
         background-color: var(--dark-purple);
-        transform: translateX(100%);
-        transition: transform 0.1s ease-in;
+        opacity: 0.2;
+        transform: translateY(-150%);
+        transition: transform 0.5s ease-in;
     }
     /* burger */
     .burger {
         display: block;
         margin-right: 30px;
     }
+    .burger:hover {
+        background-color: var(--french-rose);
+    }
     /* nav menu CLICKED*/
     .nav-active {
-        transform: translateX(0%);
+        transform: translateY(0%);
+        opacity: 1;
     }
 
     /* just nav options */
