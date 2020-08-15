@@ -11,26 +11,21 @@
     </head>
     <body>
         <header>    
-            <a class="logo-container" href="../index.html" title="Home page"><img class="logo" src="../icons/vgc png logo for header.png" alt="vgc logo (joystick beside title)"></a>
-            <nav>    
-                <ul class="nav-links">
-                    <li><a href="events.html" title="Events page">Events</a></li>
-                    <li><a href="about.html" title="About page">About</a></li>
-                    <li><a href="contact.html" title="Contact page">Contact</a></li>
-                </ul>
-            <aside>
-                <ul class="social-nav">
-                    <li><a href="https://www.instagram.com/vgcualberta/" title="vgc instagram page"><img src="../icons/instagram.svg" alt="instagram icon"></a></li>
-                    <li><a href="https://www.facebook.com/vgcualberta/" title="vgc facebook page"><img src="../icons/facebook.svg" alt="facebook link"></a></li>
-                    <li><a href="https://www.twitch.tv/thevgcofficial" title="vgc twitch page"><img src="../icons/twitch.svg" alt="twitch link"></a></li>
-                </ul>
-            </aside>
+            <a href="../index.html" title="Home page"><img class="logo" src="../icons/vgc png logo for header.png" alt="vgc logo (joystick beside title)"></a>
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>  
+            <nav class="nav-menu">
+                <div class="nav-page"><a href="events.html" title="Events page">Events</a></div>
+                <div class="nav-page"><a href="about.html" title="About page">About</a></div>
+                <div class="nav-page"><a href="contact.html" title="Contact page">Contact</a></div>
+                <div class="social-nav">
+                    <aside class="social-nav">
+                        <a href="https://www.instagram.com/vgcualberta/" title="vgc instagram page"><img src="../icons/instagram.svg" alt="instagram icon"></a>
+                        <a href="https://www.facebook.com/vgcualberta/" title="vgc facebook page"><img src="../icons/facebook.svg" alt="facebook link"></a>
+                        <a href="https://www.twitch.tv/thevgcofficial" title="vgc twitch page"><img src="../icons/twitch.svg" alt="twitch link"></a>
+                    </aside>
+                </div>
             </nav>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
         </header>
         <main>
             <h2>Contact</h2>
@@ -49,6 +44,5 @@
                 <p>Our Discord Server is currently exclusive to club members and folks who join in on our Game Night. Contact us to get an invite!</p>
             </section>
         </main>
-        <script src="../app.js"></script>
     </body>
 </html>
