@@ -1,3 +1,3 @@
-# vgcualberta.github.io
+# VGC UAlberta
+
 The official website of UAlberta's Video Gaming Club
-Designed & Built by Helen Aquino
