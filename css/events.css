@@ -1,4 +1,50 @@
 /* ----- CSS for events.html ----- */
+/* colour scheme */
+* {
+    --ghost-white: #fcfaff;
+    --dark-turquoise: #0acedc;
+    --purple: #6a197d;
+    --xiketic: #0a0114;
+    --french-rose: #ff4782;
+}
+
+/* main content */
+main {
+    width: 90%;
+}
+.header-text {
+    text-align: center;
+    margin: 25px 0 50px;
+}
+.header-text h2, .header-text p{
+    margin: 0;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+}
+.description {
+    width: 40%;
+
+}
+.description > div {
+    width: 80%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--purple);
+    border-radius: 15px;
+}
+/* featured event */
+
+
+/* games night */
+
+
+/* events schedule */
+
 /* calendars */
 .calendar {
     max-width: 100%;
@@ -6,8 +52,47 @@
 .mobile-cal {
     display: none;
 }
-main {
-    padding-top: 110px;
+
+@media screen and (max-width: 1500px) {
+    article {
+        display: initial;
+    }
+    .description {
+        margin: 0;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .description > div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: initial;
+        background-color: initial;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #featured-event, #gamesNight {
+        width: 50%;
+        flex: 0 1 30%;
+        padding: 20px;
+        background-color: var(--purple);
+        border-radius: 15px;
+    }
+    #featured-event {
+        margin-right: 20px;
+    }
+    #gamesNight {
+        margin-left: 20px;
+    }
+    #eventsSched {
+        width: 100%;
+    }
+    .desktop-cal{
+        display: grid;
+        place-items: center;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -17,3 +102,15 @@ main {
     .mobile-cal {
         display: block;
     }
+    .description > div {
+        flex-direction: column;
+    }
+    #featured-event, #gamesNight {
+        width: 75%;
+        margin: 20px auto;
+    }
+    /* #eventsSched > div {
+        width: 100%;
+        margin: auto;
+    } */
+}

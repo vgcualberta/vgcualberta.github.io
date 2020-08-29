@@ -17,32 +17,44 @@
             <nav class="nav-menu">
                 <div class="nav-page"><a href="events.html" title="Events page">Events</a></div>
                 <div class="nav-page"><a href="about.html" title="About page">About</a></div>
-                <div class="nav-page"><a href="contact.html" title="Contact page">Contact</a></div>
-                <div class="social-nav">
-                    <aside class="social-nav">
-                        <a href="https://www.instagram.com/vgcualberta/" title="vgc instagram page"><img src="../icons/instagram.svg" alt="instagram icon"></a>
-                        <a href="https://www.facebook.com/vgcualberta/" title="vgc facebook page"><img src="../icons/facebook.svg" alt="facebook link"></a>
-                        <a href="https://www.twitch.tv/thevgcofficial" title="vgc twitch page"><img src="../icons/twitch.svg" alt="twitch link"></a>
-                    </aside>
-                </div>
+                <div class="nav-page"><a href="contact.html" title="Join page">Join</a></div>
             </nav>
         </header>
         <main>
-            <h2>Contact</h2>
-            <p>Interested in becoming a member? Stopping by for a game night? Questions about VGC? Reach us through either email or through any of our social media!</p>
-            <address>
-                <ul>
-                    <li><a href="mailto:vgc@ualberta.ca"><img class="contact-icons" src="../icons/mail.svg" alt="email icon"></a></li>
-                    <li><a href="https://www.instagram.com/vgcualberta/" title="vgc instagram page"><img class="contact-icons" src="../icons/instagram.svg" alt="instagram icon"></a></li>
-                    <li><a href="https://www.facebook.com/vgcualberta/" title="vgc facebook page"><img class="contact-icons" src="../icons/facebook.svg" alt="facebook link"></a></li>
-                    <li><a href="https://www.twitch.tv/thevgcofficial" title="vgc twitch page"><img class="contact-icons" src="../icons/twitch.svg" alt="twitch link"></a></li>
-                </ul>
-            </address>
-            <section id="joinDiscord">
-                <h3>Join Our Discord Server</h3>
-                <img class="contact-icons" src="../icons/discord.svg" alt="discord icon">
-                <p>Our Discord Server is currently exclusive to club members and folks who join in on our Game Night. Contact us to get an invite!</p>
-            </section>
+            <div class="header-text">
+                <h2>Join</h2>
+                <p>Get involved, or join us just for our Games Night.</p>
+            </div>
+            <article>
+                <p>We'd love for you to become a member of our vibrant community! VGC Membership is low-commitment, we'll have volunteer opportunities to help with events, and you'll get full access to our Discord server to hang out and play some games. Sign up below!</p>
+                <div id="tripetto"></div>
+                <script src="https://unpkg.com/tripetto-runner-foundation"></script>
+                <script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+                <script src="https://unpkg.com/tripetto-services"></script>
+                <script>
+                    var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiWERuUUViUWtOTU01T0FweTZIZXZHUWY3NTZNRkpzWkczMW5sL0IwQjIxND0iLCJkZWZpbml0aW9uIjoiVDZ1N0tZbkpiOGxZWkNXcm9RM2xGcjYyb0Vqa3VYeUVCaGc3VEVlZCtWYz0iLCJ0eXBlIjoiY29sbGVjdCJ9.fftCEI8e4neNroccWOIyNJSKj4FO0oYNXY2q12ufv_U" });
+
+                    TripettoAutoscroll.run({
+                        element: document.getElementById("tripetto"),
+                        definition: tripetto.definition,
+                        styles: tripetto.styles,
+                        l10n: tripetto.l10n,
+                        locale: tripetto.locale,
+                        translations: tripetto.translations,
+                        attachments: tripetto.attachments,
+                        onSubmit: tripetto.onSubmit
+                    });
+                </script>
+            </article>
         </main>
+        <footer>
+            <aside class="social-nav">
+                <a href="mailto:vgc@ualberta.ca" title="email link"><img src="../icons/mail.svg" alt="email icon"></a>
+                <a href="https://www.instagram.com/vgcualberta/" title="vgc instagram page"><img src="../icons/instagram.svg" alt="instagram icon"></a>
+                <a href="https://www.facebook.com/vgcualberta/" title="vgc facebook page"><img src="../icons/facebook.svg" alt="facebook link"></a>
+                <a href="https://www.twitch.tv/thevgcofficial" title="vgc twitch page"><img src="../icons/twitch.svg" alt="twitch link"></a>
+            </aside>
+            <small class="copyright">&copy; Copyright 2020, Video Gaming Club</small>
+        </footer>
     </body>
 </html>

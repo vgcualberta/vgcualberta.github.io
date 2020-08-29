@@ -2,15 +2,15 @@
 * {
     --ghost-white: #fcfaff;
     --dark-turquoise: #0acedc;
-    --dark-purple: #140128;
+    --purple: #45046a;
     --xiketic: #0a0114;
     --french-rose: #ff4782;
 }
 /*----------------------Global Styles--------------------------*/
 body {
-    color:var(--ghost-white);
+    color:white;
     background: var(--xiketic);
-    background: linear-gradient(180deg, var(--xiketic) 25%, var(--dark-purple) 50%);
+    background: linear-gradient(170deg, var(--xiketic) 40%, var(--purple) 90%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,9 +25,23 @@ ul, li {
 a {
     text-decoration: none;
     list-style-type: none;
-    color: var(--ghost-white);
+    color: white;
 } 
-
+main {
+    margin: 0 auto;
+    padding-top: 110px;
+}
+.header-text {
+    text-align: center;
+    margin: 30px auto;
+}
+.header-text h2, .header-text p{
+    margin: 0;
+    padding: 0;
+}
+.header-text h2 {
+    font-size: 2em;
+}
 /*-------------------------Navbar-------------------------------*/
 header {
     position: fixed;
@@ -51,27 +65,16 @@ nav {
 .nav-menu > div {
     display: block;
     padding: 20px;
+    margin-bottom: 40px;
 }
 .nav-page {
     text-align: center;
 }
 .nav-page:hover {
-    background-color: var(--dark-purple);
+    background-color: var(--purple);
 }
 .nav-page a:hover {
     color: var(--french-rose);
-} 
-
-/* social media section */
-.social-nav {
-    display: flex;
-    justify-content: center;
-  }
-.social-nav a {
-    margin: 0 15px;
-}
-.social-nav img{
-    width: 30px;
 }   
 
 /*logo*/
@@ -91,7 +94,7 @@ nav {
     user-select: none;
 }
 .nav-icon {
-    background: var(--ghost-white);
+    background-color: white;
     display: block;
     height: 3px;
     width: 30px;
@@ -100,7 +103,7 @@ nav {
     transition: background .2s ease-out;
 }
 .nav-icon:before, .nav-icon:after {
-    background: var(--ghost-white);
+    background-color: white;
     content: '';
     display: block;
     height: 100%;
@@ -135,10 +138,25 @@ nav {
     top:0;
 }
 
-/*-----------------------main content--------------------------*/
-main {
-    margin: 0 auto 50px;
-    padding-top: 110px;
+/*-----------------------footer--------------------------*/
+footer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.social-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+.social-nav a {
+    margin: 0 5px;
+}
+.social-nav img{
+    width: 30px;
+} 
+.copyright {
+    text-align: center;
 }
 
 /*-----------------------Responsive stuff---------------------*/
@@ -151,23 +169,21 @@ main {
     header {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     header div {
         float: left;
     }
     .nav-menu {
         clear: none;
-        position: fixed;
-        left: 50%;
-        margin-left: -130px;
         max-height: none;
+        margin-right: 30px;
+    }
+    .nav-menu > div {
+        margin-bottom: 0;
     }
     .nav-page:hover{
         background-color: transparent;
-    }
-    .social-nav {
-        position: fixed;
-        right: 10px;
     }
     .menu-icon {
         display: none;

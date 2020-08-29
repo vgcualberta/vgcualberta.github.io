@@ -1,7 +1,22 @@
 /* ----- CSS for contact.html ----- */
-.contact-icons {
-    width: 30px;
+/* colour scheme */
+* {
+    --ghost-white: #fcfaff;
+    --dark-turquoise: #0acedc;
+    --purple: #6a197d;
+    --xiketic: #0a0114;
+    --french-rose: #ff4782;
 }
-main {
-    padding-top: 110px;
+/* main content */
+article {
+    width: 60%;
+    margin: 0 auto; 
+}
+#tripetto {
+    margin: 100px 0;
+}
+@media screen and (max-width:768px) {
+    .header-text, article {
+        width: 75%;
+    }
 }
