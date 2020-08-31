@@ -34,16 +34,28 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: var(--purple);
-    border-radius: 15px;
 }
+#gamesNight {
+    margin-top: 2em;
+}
+
 /* featured event */
-
-
-/* games night */
-
-
-/* events schedule */
+button {
+    border: none;
+    color: white;
+    background-color: var(--french-rose);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Roboto Mono', 'Courier New', monospace;
+    cursor: pointer;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+button:hover {
+    box-shadow: 0 0 10px var(--french-rose);
+    color: var(--xiketic);
+}
 
 /* calendars */
 .calendar {
@@ -76,14 +88,13 @@ article {
         width: 50%;
         flex: 0 1 30%;
         padding: 20px;
-        background-color: var(--purple);
-        border-radius: 15px;
     }
     #featured-event {
         margin-right: 20px;
     }
     #gamesNight {
         margin-left: 20px;
+        margin-top: 0;
     }
     #eventsSched {
         width: 100%;
@@ -109,8 +120,4 @@ article {
         width: 75%;
         margin: 20px auto;
     }
-    /* #eventsSched > div {
-        width: 100%;
-        margin: auto;
-    } */
 }
