@@ -20,7 +20,7 @@ main {
     margin: 0;
 }
 
-article {
+.events {
     display: flex;
     justify-content: space-around;
 }
@@ -65,8 +65,34 @@ button:hover {
     display: none;
 }
 
+/* hall of fame */
+#halloffame {
+    margin: 8em;
+}
+#halloffame h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+#halloffame > p {
+    text-align: center;
+    margin: 0;
+}
+#halloween2020{
+    width: 50%;
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#halloween2020 P {
+    margin-top: 1em;
+    width: 60%;
+}
+
 @media screen and (max-width: 1500px) {
-    article {
+    .events {
         display: initial;
     }
     .description {
@@ -119,5 +145,24 @@ button:hover {
     #featured-event, #gamesNight {
         width: 75%;
         margin: 20px auto;
+    }
+
+    #halloffame {
+        width: 75%;
+        margin: 4em auto 30px;
+    }
+    #halloffame h3, #halloffame p{
+        margin: 0;
+        padding: 0;
+    }
+    #halloffame p {
+        text-align: unset;
+    }
+    #halloween2020 {
+        width: 100%;
+    }
+    #halloween2020 P {
+        margin-top: 1em;
+        width: 100%;
     }
 }
